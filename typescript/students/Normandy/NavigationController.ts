@@ -79,6 +79,11 @@ export default class YourNavigationController extends NavigationController {
 			z: number
 		}
 
+		interface checkpoint {
+			x: number
+			y: number
+		}
+
 	}
 
 }
