@@ -63,6 +63,10 @@ export default class YourPropulsionController extends PropulsionController {
         }
         console.log(headingDiff);
     }
+
+    calculateAccelAngle(currentAngVelo: number, currentAngle: number, targetAngle: number) {
+		return -Math.pow(currentAngVelo,2)/(2*angleDiff(currentAngle,targetAngle))
+	}
 }
 
 
