@@ -28,9 +28,10 @@ export default class YourNavigationController extends NavigationController {
 	thrusterPowerClockwise: number = 0;
 	thrusterPowerCounterClockwise: number = 0;
 
+	
 	//runs multiple times a second
 	navigationUpdate(getShipStatus: (key: keyof ShipStatus) => number, warp: () => Error|null, land: () => Error|null, getMapData: () => MapData) {
-
+		
 		//galaxy MAP
 		//let map = new Map<Galaxy, SolarSystem[]>();
 
@@ -68,6 +69,7 @@ export default class YourNavigationController extends NavigationController {
 			name: string
 			x: number
 			y: number
+			z: number
 		}
 
 	}
