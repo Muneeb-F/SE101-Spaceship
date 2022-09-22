@@ -108,12 +108,12 @@ export default class YourNavigationController extends NavigationController {
 			name: string
 			x: number
 			y: number
-			z: number
 		}
 
 		interface checkpoint {
 			x: number
 			y: number
+			z: number
 		}
 
 	}
